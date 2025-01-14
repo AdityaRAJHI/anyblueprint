@@ -1,0 +1,29 @@
+@keyframes carousel-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--row-width)));
+  }
+}
+
+@keyframes carousel-left {
+  0% {
+    transform: translateX(calc(-1 * var(--row-width)));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-carousel-right {
+  animation: carousel-right 60s linear infinite;
+}
+
+.animate-carousel-left {
+  animation: carousel-left 60s linear infinite;
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}

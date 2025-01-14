@@ -1,0 +1,108 @@
+.blueprint-bg {
+  background-color: #1e3a8a; /* Dark blue background */
+  background-image: 
+    linear-gradient(rgba(147, 197, 253, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 197, 253, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(147, 197, 253, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 197, 253, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+.ruler-top, .ruler-left {
+  position: fixed;
+  background-color: #1e3a8a;
+  z-index: 40;
+}
+
+.ruler-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  border-bottom: 1px solid rgba(147, 197, 253, 0.2);
+}
+
+.ruler-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  border-right: 1px solid rgba(147, 197, 253, 0.2);
+}
+
+.ruler-marks {
+  position: absolute;
+  color: rgba(147, 197, 253, 0.4);
+  font-size: 8px;
+  font-family: monospace;
+}
+
+.ruler-top .ruler-marks {
+  top: 4px;
+}
+
+.ruler-left .ruler-marks {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  left: 4px;
+}
+
+.blueprint-card {
+  background-color: rgba(30, 58, 138, 0.8) !important;
+  border: 1px solid rgba(147, 197, 253, 0.2) !important;
+  backdrop-filter: blur(8px);
+}
+
+.blueprint-input {
+  background-color: rgba(30, 58, 138, 0.5) !important;
+  border-color: rgba(147, 197, 253, 0.3) !important;
+  color: #d0e6ff !important;
+}
+
+.blueprint-input:focus {
+  outline: none;
+  border-color: #3b82f6 !important; /* Blue color */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important; /* Blue glow */
+}
+
+.blueprint-input::placeholder {
+  color: rgba(147, 197, 253, 0.6) !important;
+}
+
+.blueprint-button {
+  background-color: rgba(147, 197, 253, 0.1) !important;
+  border: 1px solid rgba(147, 197, 253, 0.3) !important;
+  color: #93c5fd !important;
+}
+
+.blueprint-button:hover {
+  background-color: rgba(147, 197, 253, 0.2) !important;
+}
+
+.blueprint-text {
+  color: #93c4fd !important;
+}
+
+.blueprint-title {
+  color: white !important;
+}
+
+.blueprint-button-primary {
+  background-color: white !important;
+  color: #1e3a8a !important;
+  border: 1px solid #93c5fd !important;
+}
+
+.blueprint-button-primary:hover {
+  background-color: #f0f9ff !important;
+}
+
+.blueprint-subheading {
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #93c5fd !important;
+}
